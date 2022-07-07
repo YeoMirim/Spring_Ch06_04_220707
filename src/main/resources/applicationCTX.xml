@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+
+	<!-- Bean : student3 -->
+	
+	<bean id="student3" class="com.mirim.test.Student">
+		
+		<constructor-arg value="임꺽정" />
+		<constructor-arg value="35" />
+		<constructor-arg>
+			<list>
+				<value>운동</value>
+				<value>산책</value>
+				<value></value>
+			</list>
+		</constructor-arg>
+		
+		<property name="weight" value="85"></property>
+		<property name="height" value="183"></property>
+		
+	</bean>
+	
+</beans>
+
+<!-- annotation-config를 사용하기 위해서 Namespaces에서 context 추가시키기 -->
